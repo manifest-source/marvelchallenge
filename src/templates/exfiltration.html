@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Exfiltration</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Blinker&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <p>Data is available in agent.db within container, as well as below.</p>
+    <table>
+        <tr>
+            <th width="20%">Name</th>
+            <th width="10%">ID</th>
+            <th width="40%">Description</th>
+            <th width="30%">Picture URL</th>
+        </tr>
+        {% for char in chars %}
+        <tr>
+            <td>{{ char['name'] }}</td>
+            <td>{{ char['id'] }}</td>
+            <td>{{ char['description'] }}</td>
+            <td>{{ char['pictureurl'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+<p><a href="/">Return to Agent Portal</a>
+<p>Data provided by Marvel. © 2014 Marvel</p>
+</body>
+</html>

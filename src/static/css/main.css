@@ -1,0 +1,33 @@
+body {
+  font-family: "Architects Daughter", Helvetica, Arial, sans-serif;
+  color: #444;
+}
+
+header {
+  background-color: #DFB887;
+  height: 35px;
+  width: 100%;
+  opacity: .9;
+  margin-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Russo One', sans-serif;
+}
+
+table {
+    background-color:#eee;border-collapse:collapse;
+}
+
+table th {
+    background-color:#000;color:white;
+}
+
+table td, table td * {
+    vertical-align: top;
+    font-family: 'Blinker', sans-serif;
+}
+
+table td, table th {
+    padding:5px;border:1px solid #000;
+}

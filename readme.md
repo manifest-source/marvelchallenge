@@ -16,6 +16,8 @@ possible approach, though the approach to exfiltration could have been handled i
 
 ## Setting Things Up
 
+This exercise assumes that you have API keys to the Marvel Developer API.
+
 ### Step 1: Create an Environment File
 Create an environment file containing your API keys with any name and in any safe location of your choosing. 
 
